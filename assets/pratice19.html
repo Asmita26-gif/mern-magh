@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        padding: 20px;
+        background-color: #f8f8f8;
+        text-align: center;
+      }
+
+      .designs {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding: 40px;
+      }
+
+      .design-card {
+        width: 300px;
+        background-color: #000;
+        color: white;
+        overflow: hidden;
+      }
+
+      .design-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+
+      .design-info {
+        padding: 15px;
+      }
+
+      /* Subscribe Section */
+      .subscribe {
+        background-color: #444;
+        color: white;
+        padding: 40px;
+
+      }
+
+      .subscribe input {
+        width: 50%;
+        padding: 10px;
+        margin-top: px;
+        border: none;
+        border-radius: 5px;
+      }
+
+      .subscribe button {
+        padding: 10px 20px;
+        background-color: #c89d5d;
+        color: white;
+        border: none;
+        margin-top: 10px;
+        cursor: pointer;
+      }
+
+      /* 
+      footer */
+      .footer {
+        background-color: #eee;
+        padding: 40px;
+        margin-top: 20px;
+      }
+
+      .footer-columns {
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+      }
+
+      .footer-column h4 {
+        margin-top: 10px;
+      }
+
+      .footer-column ul {
+        list-style: none;
+      }
+
+      .footer-column ul li {
+        margin: 5px 0;
+      }
+
+      .footer-bottom {
+        margin-top: 20px;
+        background-color: black;
+        color: white;
+        padding: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <section class="designs">
+      <div class="design-card">
+        <img src="abstract.jpg" alt="Abstract Design">
+        <div class="design-info">
+          <h3>Abstract Design</h3>
+          <p>Reprehenderit optio placeat quasi excepturi architecto,explicabo facilis perspiciatis error maxi memagnam
+          </p>
+
+        </div>
+      </div>
+
+      <div class="design-card">
+        <img src="modern.jpg" alt="Modern Design">
+        <div class="design-info">
+          <h3>Modern Design</h3>
+          <p>Reprehenderit optio placeat quasi excepturi architecto,explicabo facilis perspiciatis error maxi memagnam
+          </p>
+
+        </div>
+      </div>
+
+      <div class="design-card">
+        <img src="traditional.jpg" alt="traditional Design">
+        <div class="design-info">
+          <h3>Traditional Design</h3>
+          <p>Reprehenderit optio placeat quasi excepturi architecto,explicabo facilis perspiciatis error maxi memagnam
+          </p>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="subscribe">
+      <h2>Join Our Community <span><i class="fa-solid fa-users"></i></span></h2>
+
+      <p>Receive emails on discount and special offers</p>
+      <input type="email" placeholder="Enter your email address">
+
+      <button>SUBSCRIBE</button>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-columns">
+        <div class="footer-column">
+          <h4>Account</h4>
+          <ul>
+            <li>Sign Up</li>
+            <li>Sign in</li>
+            <li>Sunscribe</li>
+          </ul>
+        </div>
+
+
+        <div class="footer-column">
+          <h4>Product</h4>
+          <ul>
+            <li>Sofa</li>
+            <li>Art</li>
+            <li>Wallpaper</li>
+            <li>Woodworks</li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Services</h4>
+          <ul>
+            <li>Interior Decorations</li>
+            <li>First Hand Design</li>
+            <li>Design & Decor</li>
+            <li>Design Advice</li>
+            <li>Sell your Designs</li>
+          </ul>
+        </div>
+
+        <div class="footer-column socials">
+          <h4>Socials</h4>
+          <ul>
+            <li><i class="fa-brands fa-facebook"></i></li>
+            <li><i class="fa-brands fa-instagram"></i></li>
+            <li><i class="fa-brands fa-twitter"></i></li>
+            <li><i class="fa-brands fa-pinterest"></i></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>⭐⭐⭐⭐⭐ 1M+ Users</p>
+      </div>
+    </footer>
+  </body>
+
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        padding: 20px;
+      }
+
+      main {
+        display: grid;
+        max-width: 600px;
+        border: 1px solid black;
+        grid-template-columns: repeat(3, 100px) 200px;
+        grid-template-rows: 200px 200px;
+
+        justify-content: space-evenly;
+        align-items: start;
+        align-content: start;
+
+      }
+
+      .bx1 {
+        background-color: yellowgreen;
+        grid-row: span 2;
+      }
+
+      .bx2 {
+        background-color: crimson;
+      }
+
+      .bx3 {
+        background-color: coral;
+      }
+
+      .bx4 {
+        background-color: olive`;
+      }
+
+      .bx5 {
+        background-color: palevioletred;
+      }
+
+      .bx6 {
+        background-color: indigo;
+      }
+
+      h1 {
+        color: red;
+        background-color: sandybrown;
+        width: 100%;
+        font-family: cursive;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Grid Css</h1>
+    <main>
+      <div class="bx1">
+        <h2>bx1</h2>
+      </div>
+      <div class="bx2">
+        <h2>bx2</h2>
+      </div>
+      <div class="bx3">
+        <h2>bx3</h2>
+      </div>
+      <div class="bx4">
+        <h2>bx4</h2>
+      </div>
+      <div class="bx5">
+        <h2>bx5</h2>
+      </div>
+      <div class="bx6">
+        <h2>bx6</h2>
+      </div>
+    </main>
+
+  </body>
+
+</html>

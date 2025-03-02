@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .grid-container {
+        display: grid;
+        grid-template-areas: "header1 header1 header1"
+          "header2 header2 header2"
+          "nav1 main main"
+          "nav2 subcontent subcontent"
+          "footer1 footer1 footer1"
+          "footer2 footer2 footer2";
+        grid-template-rows: 100px 1fr auto auto;
+        grid-template-columns: 50px 1fr 1fr;
+        gap: 5px;
+        height: 100px;
+        padding: 10px;
+
+
+      }
+
+      .header1 {
+        grid-area: header1;
+        background-color: skyblue;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        columns: auto;
+      }
+
+      .header2 {
+        grid-area: header2;
+        background-color: skyblue;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .nav1 {
+        grid-area: nav1;
+        background-color: blue;
+        padding: 20px;
+      }
+
+      .nav2 {
+        grid-area: nav2;
+        background-color: blue;
+        padding: 20px;
+      }
+
+      .main {
+        grid-area: main;
+        background-color: hotpink;
+        padding: 20px;
+
+      }
+
+      .subcontent {
+        grid-area: subcontent;
+        background-color: lightcoral;
+        padding: 20px;
+
+      }
+
+      .footer1 {
+        grid-area: footer1;
+        background-color: orangered;
+        padding: 20px;
+
+      }
+
+      .footer2 {
+        grid-area: footer2;
+        background-color: orangered;
+        padding: 20px;
+
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="grid-container">
+      <header class="header1">Header 1</header>
+      <header class="header2">Header 2</header>
+      <nav class="nav1">Nav 1</nav>
+      <main class="main">Main </main>
+      <nav class="nav2">Nav 2</nav>
+      <aside class="subcontent">Subcontent</aside>
+      <footer class="footer1">Footer 1</footer>
+      <footer class="footer2">Footer 2</footer>
+    </div>
+
+  </body>
+
+</html>

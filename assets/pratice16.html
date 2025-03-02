@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Grid Layout</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        padding: 10px;
+        background-color: black;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .grid-box {
+        display: grid;
+        gap: 10px;
+        max-width: 900px;
+        width: 100%;
+        grid-template-columns: 200px 1fr 1fr;
+        grid-template-rows: 50px 300px 50px;
+        grid-template-areas:
+          "header header header"
+          "nav main subcontent"
+          "footer footer footer";
+      }
+
+      .item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-weight: bold;
+        padding: 10px;
+        text-align: center;
+      }
+
+      .header {
+        background-color: blue;
+        grid-area: header;
+      }
+
+      .nav {
+        background-color: brown;
+        grid-area: nav;
+      }
+
+      .main {
+        background-color: rgb(247, 87, 247);
+        grid-area: main;
+      }
+
+      .subcontent {
+        background-color: hotpink;
+        grid-area: subcontent;
+      }
+
+      .footer {
+        background-color: orangered;
+        grid-area: footer;
+      }
+
+      /* Tablet Devices */
+      @media (max-width: 800px) {
+        .grid-box {
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: 50px 150px 150px 50px;
+          grid-template-areas:
+            "header header"
+            "nav main"
+            "nav subcontent"
+            "footer footer";
+        }
+      }
+
+      /* Mobile Devices */
+      @media (max-width: 500px) {
+        .grid-box {
+          grid-template-columns: 1fr;
+          grid-template-rows: auto;
+          grid-template-areas:
+            "header"
+            "nav"
+            "main"
+            "subcontent"
+            "footer";
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="grid-box">
+      <div class="header item">Header</div>
+      <div class="nav item">Nav</div>
+      <div class="main item">Main</div>
+      <div class="subcontent item">Subcontent</div>
+      <div class="footer item">Footer</div>
+    </div>
+  </body>
+
+</html>

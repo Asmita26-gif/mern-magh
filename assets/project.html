@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microsoft Store</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      .navbar {
+        display: flex;
+        align-items: center;
+        padding: 10px 20px;
+      }
+
+      .logo-container {
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+        /* Space between logo and nav links */
+      }
+
+      .logo {
+        width: 40px;
+        /* Adjust size as needed */
+        height: auto;
+        margin-right: 10px;
+      }
+
+      .title {
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      .nav-links {
+        list-style: none;
+        display: flex;
+        padding: 0;
+        margin: 0;
+      }
+
+      .nav-links li {
+        margin-right: 15px;
+        /* Space between links */
+      }
+
+      .nav-links a {
+        text-decoration: none;
+        color: black;
+        font-size: 18px;
+        align-items: center;
+      }
+
+      .nav-links a:hover {
+        text-decoration: underline;
+      }
+
+
+
+      /* .title {
+        font-family: 25px;
+        font-weight: bold;
+      }
+
+      .nav ul {
+        list-style: none;
+        display: flex;
+        gap: 10px;
+      }
+
+      .nav ul li {
+        display: inline;
+      }
+
+      .nav ul li a {
+        text-decoration: none;
+        color: black;
+        font-weight: 500;
+      } */
+
+      .icons {
+        font-size: 20px;
+        display: flex;
+        justify-content: end;
+
+
+      }
+
+      /* Hero Section */
+      .hero {
+        background-image: url(https://micro-sand.vercel.app/assets/showcase.jpg);
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: cover;
+        height: 420px;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        padding-bottom: 70px;
+        margin: 20px 0;
+
+      }
+
+
+      .hero img {
+        width: 70%;
+        height: 500px;
+
+      }
+
+      .hero-text {
+        margin-top: 10px;
+      }
+
+      .hero-text h2 {
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      .hero-text p {
+        font-size: 16px;
+        color: #555;
+      }
+
+      .shop-btn {
+        background-color: black;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      .shop-btn:hover {
+        background-color: #333;
+      }
+
+      /* Product Grid */
+      .product-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        padding: 20px 10%;
+        background: white;
+      }
+
+      .product {
+        text-align: center;
+        background: white;
+      }
+
+      .product img {
+        width: 100%;
+        max-height: 200px;
+        object-fit: cover;
+      }
+
+      .product h3 {
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      .product p {
+        font-size: 14px;
+        color: #666;
+        padding: 0 10px;
+      }
+
+      .product a {
+        color: #0078d4;
+        font-weight: bold;
+        text-decoration: none;
+      }
+
+      .product a:hover {
+        text-decoration: underline;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 900px) {
+        .product-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media (max-width: 600px) {
+        .product-grid {
+          grid-template-columns: repeat(1, 1fr);
+        }
+
+
+
+      }
+    </style>
+
+  </head>
+
+  <body>
+    <div class="navbar">
+      <div class="logo-container">
+        <img height="50px" width="108px" src="microsoft.jpg" alt="">
+
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Office</a></li>
+        <li><a href="#">Windows</a></li>
+        <li><a href="#">Xbox</a></li>
+        <li><a href="#">Deals</a></li>
+        <li><a href="#">Support</a></li>
+      </ul>
+    </div>
+
+    <div class="icons">
+      <span class="search-icon">🔍</span>
+      <span class="cart-icon">🛒</span>
+    </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <img src="Microsoft-Surface-line.jpg" alt="Surface Deals">
+      <div class="hero-text">
+        <!-- <h2>Surface Deals</h2> -->
+        <p>Select Surfaces are on sale now - save while supplies last</p>
+        <button class="shop-btn">Shop Now</button>
+      </div>
+    </section>
+
+    <!-- Product Grid -->
+    <section class="product-grid">
+      <div class="product">
+        <img src="card1.png" alt="New Surface Pro 7">
+        <h3>New Surface Pro 7</h3>
+        <p>See how Katie Sowers, Asst. Coach for the 49ers, uses Surface Pro 7 to put her plans into play.</p>
+        <a href="#">LEARN MORE ></a>
+      </div>
+
+      <div class="product">
+        <img src="card2.png" alt="New Surface Pro 7">
+        <h3>New Surface Pro 7</h3>
+        <p>See how Katie Sowers, Asst. Coach for the 49ers, uses Surface Pro 7 to put her plans into play.</p>
+        <a href="#">LEARN MORE ></a>
+      </div>
+
+      <div class="product">
+        <img src="card3.png" alt="New Surface Pro 7">
+        <h3>New Surface Pro 7</h3>
+        <p>See how Katie Sowers, Asst. Coach for the 49ers, uses Surface Pro 7 to put her plans into play.</p>
+        <a href="#">LEARN MORE ></a>
+      </div>
+
+      <div class="product">
+        <img src="card4.png" alt="New Surface Pro 7">
+        <h3>New Surface Pro 7</h3>
+        <p>See how Katie Sowers, Asst. Coach for the 49ers, uses Surface Pro 7 to put her plans into play.</p>
+        <a href="#">LEARN MORE ></a>
+      </div>
+    </section>
+  </body>
+
+</html>

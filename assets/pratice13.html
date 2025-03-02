@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .grid-container {
+        display: grid;
+        grid-template-areas: "header header header"
+          "nav main main"
+          "nav subcontent subcontent"
+          "footer footer footer";
+        grid-template-rows: auto 1fr auto auto;
+        grid-template-columns: 1fr 1fr;
+        gap: 5px;
+        height: 100px;
+        padding: 10px;
+
+      }
+
+      .header {
+        grid-area: header;
+        background-color: skyblue;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .nav {
+        grid-area: nav;
+        background-color: blue;
+        padding: 20px;
+      }
+
+      .main {
+        grid-area: main;
+        background-color: hotpink;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .subcontent {
+        grid-area: subcontent;
+        background-color: lightcoral;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .footer {
+        grid-area: footer;
+        background-color: orangered;
+        padding: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="grid-container">
+      <header class="header">Header</header>
+      <nav class="nav">Nav</nav>
+      <main class="main">Main </main>
+      <aside class="subcontent">Subcontent</aside>
+      <footer class="footer">Footer</footer>
+    </div>
+
+  </body>
+
+</html>

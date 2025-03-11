@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+      /* Reset and Basic Styling */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        background-color: #f8f8f8;
+        padding: 20px;
+      }
+
+      /* Container to Center the Grid */
+      .container {
+        max-width: 1200px;
+        margin: auto;
+      }
+
+      /* Grid Layout */
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+      }
+
+      /* Card Styling */
+      .card {
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .card:hover {
+        transform: translateY(-5px);
+      }
+
+      /* Wide Card for First Image */
+      .wide {
+        grid-column: span 2;
+        /* Makes the first card wider */
+      }
+
+      /* Image Styling */
+      .card img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      /* Text Content */
+      .text {
+        padding: 15px;
+      }
+
+      .text h3 {
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      .text p {
+        font-size: 14px;
+        color: #555;
+        margin-top: 5px;
+      }
+    </style>
+
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="grid">
+        <div class="card wide">
+          <img src="Animation1.jpg" alt="International Artist Feature">
+          <div class="text">
+            <h3>International Artist Feature: Malaysia</h3>
+          </div>
+        </div>
+        <div class="card">
+          <img src="animation2.jpg" alt="Remote Usability Testing">
+          <div class="text">
+            <h3>How to Conduct Remote Usability Testing</h3>
+          </div>
+        </div>
+        <div class="card">
+          <img src="aimation4.jpg" alt="Created by You">
+          <div class="text">
+            <h3>Created by You, July Edition</h3>
+            <p>Welcome to our monthly feature of fantastic tutorial results created by you, the Envato Tuts+ community!
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="animation3.jpg" alt="Alien Lander Website">
+          <div class="text">
+            <h3>How to Code a Scrolling "Alien Lander" Website</h3>
+            <p>We will be putting things together so that as you scroll down from the top of the page you'll see an
+              'Alien Lander' making its way to touch down.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="animation5.jpg" alt="Stranger Things Text Effect">
+          <div class="text">
+            <h3>How to Create a "Stranger Things" Text Effect in Adobe Photoshop</h3>
+          </div>
+        </div>
+        <div class="card">
+          <img src="animation6.jpg" alt="Business Portraits">
+          <div class="text">
+            <h3>5 Inspirational Business Portraits and How to Make Your Own</h3>
+          </div>
+        </div>
+        <div class="card">
+          <img src="fei2.jpg" alt="Web Design in China">
+          <div class="text">
+            <h3>Notes From Behind the Firewall: The State of Web Design in China</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>

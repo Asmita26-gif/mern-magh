@@ -8,8 +8,8 @@ export default function Header() {
 
 
       <nav className='space-x-5'>
-        <NavLink to={'/About'}>About</NavLink>
-        <NavLink to={'/Contact'}>Contact</NavLink>
+        <NavLink className={(e) => e.isActive ? 'text-red-700 text-2xl' : ''} to={'/About'}>About</NavLink>
+        <NavLink className={(e) => e.isActive ? 'text-orange-400 text-2xl' : ''} to={'/Contact'}>Contact</NavLink>
       </nav>
 
     </div>

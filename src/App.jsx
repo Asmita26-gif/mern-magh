@@ -7,38 +7,52 @@ import Contact from './assets/pages/Contact/Contact';
 import { createBrowserRouter, RouterProvider } from 'react-router'
 import Page1 from './assets/pages/Home/nested-pages/Page1';
 import Page2 from './assets/pages/Home/nested-pages/Page2';
+import RootLayout from './components/RootLayout';
 // import Home from './assets/pages/Home/Home'
 
 
 export default function App() {
 
-  const router = createBrowserRouter([{
-    path: '/',
-    element: <Home />,
-    children: [
-      {
-        path: 'Page-1',
-        element: <Page1 />
+  const router = createBrowserRouter([
+    {
 
-      },
-      {
 
-        path: 'Page-2',
-        element: <Page2 />
+      path: '/',
+      element: <RootLayout />,
+      children: [
+        {
+          path: '/',
+          element: <Home />,
+          children: [
+            {
+              index: true,
+              element: <Page1 />
+            },
+            {
 
-      },
-    ]
-  },
-  {
-    path: 'about',
-    element: <About />
-  },
-  {
-    path: 'contact',
-    element: <Contact />
-  }
+              path: 'Page-2',
+              element: <Page2 />
 
-  ]);
+            },
+
+
+          ]
+
+        },
+
+
+
+
+        {
+          path: 'about',
+          element: <About />
+        },
+        {
+          path: 'contact',
+          element: <Contact />
+        }]
+
+    }]);
 
   return <RouterProvider router={router} />
 

@@ -10,7 +10,7 @@ export default function Home() {
 
 
       <nav className='space-x-5'>
-        <NavLink to={'/page-1'}>Page1</NavLink>
+        <NavLink to={'/'}>Page1</NavLink>
         <NavLink to={'/page-2'}>Page2</NavLink>
       </nav>
       <Outlet />

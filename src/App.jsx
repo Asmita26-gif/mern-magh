@@ -11,6 +11,7 @@ import RootLayout from './components/RootLayout';
 import NotFound from './assets/pages/NotFound';
 
 
+
 export default function App() {
 
   const router = createBrowserRouter([
@@ -88,7 +89,9 @@ export default function App() {
 
 
   return (
-    <div >
+    <div className='flex flex-col min-h-screen' >
+      <div className='flex-grow'></div>
+
       {/* {post.map((post) => {
         return <PostCard key={post.id} post={post} />
       })} */}

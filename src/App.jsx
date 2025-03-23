@@ -9,6 +9,8 @@ import Page1 from './assets/pages/Home/nested-pages/Page1';
 import Page2 from './assets/pages/Home/nested-pages/Page2';
 import RootLayout from './components/RootLayout';
 import NotFound from './assets/pages/NotFound';
+import MyComponent from './components/MyComponent';
+
 
 
 
@@ -16,6 +18,8 @@ export default function App() {
 
   const router = createBrowserRouter([
     {
+      path: '/',
+      // element: <MyComponent />
 
 
       path: '/',
@@ -34,6 +38,8 @@ export default function App() {
           path: 'contact',
           element: <Contact />
         },
+
+
 
       ]
     },

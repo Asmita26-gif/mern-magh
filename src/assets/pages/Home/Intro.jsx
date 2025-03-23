@@ -3,7 +3,7 @@ import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 
 export default function Intro() {
   return (
-    <div className='grid grid-cols-[1fr_2fr] items-center'>
+    <div className='grid grid-cols-[1fr_2fr] items-center '>
       <div className='w-200px' >
         <DotLottieReact
           src="https://lottie.host/94f2235c-f866-4719-ad97-339706ba38e2/S9XXN3Mrwf.lottie"

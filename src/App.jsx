@@ -26,7 +26,8 @@ export default function App() {
       element: <RootLayout />,
       children: [
         {
-          index: true,
+          index: 'true',
+
           element: <Home />,
         },
 
@@ -45,10 +46,7 @@ export default function App() {
     },
 
 
-    {
-      path: '*',
-      element: <NotFound />
-    },
+
 
 
 

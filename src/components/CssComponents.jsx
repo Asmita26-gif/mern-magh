@@ -25,7 +25,7 @@ export default function CssComponents() {
           ))}
         </div>
 
-        <a href="#" className='text-indigo-600 font-medium flex items-center'>View All <span className='ml-2'>>></span></a>
+        <a href="#" className='text-indigo-600 font-medium flex items-center'>View All <span className='ml-2'>&gt;&gt;</span></a>
       </div>
 
 

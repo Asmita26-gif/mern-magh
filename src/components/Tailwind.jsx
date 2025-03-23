@@ -22,7 +22,7 @@ export default function Tailwind() {
 
         <div className='cursor-pointer py-5'>
           <a href="#" className='px-6 py-3 text-white bg-green-500 hover:bg-green-700 font-medium text-lg rounded-lg shadow-md'>
-            Explore components ->
+            Explore components -&gt;
           </a>
         </div>
       </div>

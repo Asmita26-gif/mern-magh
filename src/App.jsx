@@ -18,7 +18,7 @@ export default function App() {
 
   const router = createBrowserRouter([
     {
-      path: '/',
+      // path: '/',
       // element: <MyComponent />
 
 
@@ -26,8 +26,8 @@ export default function App() {
       element: <RootLayout />,
       children: [
         {
-          index: 'true',
 
+          index: 'true',
           element: <Home />,
         },
 

@@ -2,14 +2,10 @@ import React from 'react'
 import Home from './assets/pages/Home/Home';
 import About from './assets/pages/About/About';
 import Contact from './assets/pages/Contact/Contact';
-import { post } from './data'
-import PostCard from './components/PostCard'
+
 import { createBrowserRouter, RouterProvider } from 'react-router'
-import Page1 from './assets/pages/Home/nested-pages/Page1';
-import Page2 from './assets/pages/Home/nested-pages/Page2';
+
 import RootLayout from './components/RootLayout';
-import NotFound from './assets/pages/NotFound';
-import MyComponent from './components/MyComponent';
 
 
 

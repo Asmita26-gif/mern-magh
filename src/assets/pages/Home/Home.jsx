@@ -1,53 +1,90 @@
+// import { useState } from "react";
+
+// export default function CounterApp() {
+//   const [count, setCount] = useState(1);
+
+//   const increment = () => setCount(Count => Count + 1);
+//   const decrement = () => setCount(Count => Count - 1);
+//   const reset = () => setCount(0);
+//   console.log(count);
+
+//   return (
+//     <div className="flex flex-col items-center p-6 bg-gray-100 min-h-screen">
+//       <div className="text-3xl font-semibold mb-4">Count: {count}</div>
+//       <div className="flex gap-2 mb-4">
+//         <button
+//           onClick={decrement}
+//           className="px-4 py-2 bg-red-500 text-white disabled:bg-gray-400"
+
+//         >
+//           -
+//         </button>
+//         <button
+//           onClick={reset}
+//           className="px-4 py-2 bg-gray-500 text-white"
+//         >
+//           Reset
+//         </button>
+//         <button
+//           onClick={increment}
+//           className="px-4 py-2 bg-green-500 text-white"
+//         >
+//           +
+//         </button>
+//       </div>
+
+//     </div>
+//   );
+// }
+
+import { faker } from '@faker-js/faker';
 import React from 'react'
-import { FiTool } from 'react-icons/fi'
+import { useState } from 'react'
 
 export default function Home() {
+  // const [users, setUsers] = useState([]);
+  // const [show, setShow] = useState(false);
+  // const handleShow = () => {
+  //   setShow((prev) => !prev);
+  const [users, setUsers] = useState([]);
+  const handleUser = () => {
+    const user = {
+
+      id: faker.string.ulid(),
+      image: faker.image.avatarGitHub(),
+      username: faker.internet.displayName(),
+      email: faker.internet.email(),
+      reaction: faker.internet.emoji()
+    };
+    setUsers((prev) => [...prev, user]);
+
+  }
+  console.log(users);
+
+
   return (
-    <div className='grid grid-cols-[1fr_1fr] items-center justify-items-center min-h-screen px-6 backdrop-blur-3xl'>
-      <div className='lg:w-1/2 space-y-6'>
-        <div className='w-10 h-10 flex items-center justify-center bg-white shadow-md rounded-full'>
-          <span><FiTool className='mr-2' /></span>
+    <div className='p-5'>
+
+
+
+
+      <button onClick={handleUser} className='bg-black text-white px-5 py-1 cursor-pointer'>Add User</button>
+      {users.map((user) => {
+        return <div key={user.id} className='space-y-2 flex gap-7 items-start'>
+          <div>
+            <h2>{user.username}</h2>
+            <img src={user.image} className='h-[200px]' alt="" />
+          </div>
 
         </div>
-        <h1 className='text-5xl font-bold'>Real time problem</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus odit architecto cum magnam, libero, et eaque accusamus, quidem illo corporis sint voluptate dolore aut veniam eius quae? Error, assumenda perspiciatis?</p>
-
-      </div>
-    </div >
-  )
-}
-
-
-
-
-
-
-import React from 'react'
-import Header from '../../../components/Header'
-import { NavLink, Outlet } from 'react-router'
-import Intro from './Intro'
-
-import Tech from './Tech'
-import Info from './Info'
-import Footer from './Footer'
-
-
-export default function Home() {
-  return (
-    <div>
-
-
-      {/* <div className='h-200px w-[200px] border-2 border-amber-300 animate-myAni'>
-        <h1>hello</h1>
-      </div> */}
-
-      <Intro />
-      <Tech />
-      <Info />
-      <Footer />
-
-
+      })}
 
     </div>
-  )
+  );
+
+
 }
+
+
+
+

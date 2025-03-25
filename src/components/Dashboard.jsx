@@ -5,7 +5,7 @@ import { FiSettings } from 'react-icons/fi';
 import { IoEarthSharp } from 'react-icons/io5';
 
 
-export default function CssComponents() {
+export default function Dashboard() {
   return (
     <section className='flex flex-col lg:flex-row items-center justify-between min-h-screen px-10 bg-gray-100'>
       <div className='lg:w-1/2 space-y-6'>
